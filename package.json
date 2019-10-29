@@ -1,0 +1,35 @@
+{
+  "name": "taro-ui-for-remax",
+  "version": "0.0.0",
+  "author": "FooTearth <footearth@gmail.com>",
+  "scripts": {
+    "dev": "remax build -t wechat -w",
+    "postinstall": "npx replace 'arrayEach\\(' 'arrayEach.default(' ./node_modules/fela/es/createRenderer.js",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "NODE_ENV=production remax build -t wechat",
+    "rebuild": "rimraf src; npx cfxbuilder; npm run clean; npm run dev"
+  },
+  "dependencies": {
+    "cfx.require-plugin-coffee": "^0.2.24",
+    "clsx": "^1.0.4",
+    "color": "^3.1.2",
+    "color-blend": "^2.0.7",
+    "css": "^2.2.4",
+    "ddeyes": "^0.2.24",
+    "fela": "^10.8.0",
+    "fela-plugin-named-keys": "^10.7.0",
+    "fela-plugin-unit": "^10.8.0",
+    "fela-tools": "^10.8.0",
+    "react": "^16.10.2",
+    "remax": "^1.2.1",
+    "remax-cli": "^1.2.1",
+    "rimraf": "^3.0.0",
+    "stylus": "^0.54.7"
+  },
+  "devDependencies": {
+    "cfx.builder": "^0.0.6",
+    "replace": "^1.1.1",
+    "shelljs": "^0.8.3"
+  }
+}
