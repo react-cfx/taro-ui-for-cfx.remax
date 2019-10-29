@@ -7,7 +7,7 @@ import styl from './index.fela'
 import './index.fela.css'
 classes = fela styl
 
-import { logoImg } from './data'
+import menuData, { logoImg } from './data'
 
 import {
   View
@@ -15,7 +15,7 @@ import {
   Image
 } from 'remax/wechat'
 
-c = CFX {
+C = CFX {
   View
   Text
   Image
@@ -23,58 +23,61 @@ c = CFX {
 
 export default =>
 
-  c.View
+  C.View
     className:
       clsx(
         classes.page
         classes['page-index']
       )
   ,
-    c.View
+    C.View
       className: 'logo'
     ,
-      c.Image
+      C.Image
         className: 'img'
         src: logoImg
         mode: 'widthFix'
 
-    # c.View
-    #   className: 'page-title'
-    # , 'Taro UI'
-    # c.View
-    #   className: 'module-list'
-    # ,
-    #   menuData.reduce (r, c, i) =>
-    #     [
-    #       r...
-    #       c.View
-    #         className: 'module-list__item'
-    #         key: i
-    #         'data-id': c.id
-    #         'data-name': c.title
-    #         'data-list': c.subpages
-    #         # onClick: gotoPanel
-    #       ,
-    #         c.View
-    #           className: 'module-list__icon'
-    #         ,
-    #           c.Image
-    #             className: 'img'
-    #             src: c.icon
-    #             mode: 'widthFix'
-    #         c.View
-    #           className: 'module-list__info'
-    #         ,
-    #           c.View
-    #             className: 'title'
-    #           , c.title
-    #           c.View
-    #             className: 'content'
-    #           , c.content
-    #         c.View
-    #           className: 'module-list__arrow'
-    #         ,
-    #           c.Text
-    #             className: 'at-icon at-icon-chevron-right'
-    #     ]
-    #   , []
+    C.View
+      className: 'page-title'
+    , 'Taro UI'
+    C.View
+      className: 'module-list'
+    ,
+      menuData.reduce (r, c, i) =>
+        [
+          r...
+          C.View
+            className: 'module-list__item'
+            key: i
+            'data-id': c.id
+            'data-name': c.title
+            'data-list': c.subpages
+            # onClick: gotoPanel
+          ,
+            C.View
+              className: 'module-list__icon'
+            ,
+              C.Image
+                className: 'img'
+                src: c.icon
+                mode: 'widthFix'
+            C.View
+              className: 'module-list__info'
+            ,
+              C.View
+                className: 'title'
+              , c.title
+              C.View
+                className: 'content'
+              , c.content
+            C.View
+              className: 'module-list__arrow'
+            ,
+              C.Text
+                className: clsx [
+                  'at-icon'
+                  'at-icon-chevron-right'
+                ]
+        ]
+      , []

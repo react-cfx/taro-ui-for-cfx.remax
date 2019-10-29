@@ -8,7 +8,13 @@ import {
 
 export default =>
 
-  <View className="">
+  <View
+    className=""
+    key= ''
+    data-id= ''
+    data-name= ''
+    data-list= ''
+  >
     <Text className="">
       JSX for CFX
     </Text>

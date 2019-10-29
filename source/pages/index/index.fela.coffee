@@ -136,95 +136,95 @@ export default
         ]
         borderRadius: per 50
 
-  'page-body':
-    padding: px 40
+  # 'page-body':
+  #   padding: px 40
 
-  'componene-group':
-    fontSize: px 32
+  # 'componene-group':
+  #   fontSize: px 32
 
-  'group-item':
-    padding: joinS [
-      0
-      px 30
-    ]
-    margin: joinS [
-      px 20
-      0
-    ]
-    backgroundColor: '#fff'
-    borderRadius: px 4
-    overflow: 'hidden'
+  # 'group-item':
+  #   padding: joinS [
+  #     0
+  #     px 30
+  #   ]
+  #   margin: joinS [
+  #     px 20
+  #     0
+  #   ]
+  #   backgroundColor: '#fff'
+  #   borderRadius: px 4
+  #   overflow: 'hidden'
 
-    ':first-child':
-      marginTop: 0
+  #   ':first-child':
+  #     marginTop: 0
 
-  'group-info':
-    padding: joinS [
-      px 30
-      0
-    ]
-    display: 'flex'
-    alignItems: 'center'
-    transition: joinS [
-      'opacity'
-      '0.3s'
-    ]
+  # 'group-info':
+  #   padding: joinS [
+  #     px 30
+  #     0
+  #   ]
+  #   display: 'flex'
+  #   alignItems: 'center'
+  #   transition: joinS [
+  #     'opacity'
+  #     '0.3s'
+  #   ]
 
-    '&-tite':
-      opacity: 0.5
+  #   '&-tite':
+  #     opacity: 0.5
 
-  'group-list':
-    fontSize: px 28
+  # 'group-list':
+  #   fontSize: px 28
 
-    '& .list-component':
-      padding: joinS [
-        px 20
-        0
-      ]
-      position: 'relative'
-      alignItems: 'center'
+  #   '& .list-component':
+  #     padding: joinS [
+  #       px 20
+  #       0
+  #     ]
+  #     position: 'relative'
+  #     alignItems: 'center'
 
-      '::before':
-        content: '" "'
-        position: 'absolute'
-        left: 0
-        top: 0
-        right: 0
-        height: px 1
-        borderTop: joinS [
-          1
-          'solid'
-          '#d8d8d8'
-        ]
-        color: '#d8d8d8'
+  #     '::before':
+  #       content: '" "'
+  #       position: 'absolute'
+  #       left: 0
+  #       top: 0
+  #       right: 0
+  #       height: px 1
+  #       borderTop: joinS [
+  #         1
+  #         'solid'
+  #         '#d8d8d8'
+  #       ]
+  #       color: '#d8d8d8'
 
-      ':first-child::before':
-        display: 'none'
+  #     ':first-child::before':
+  #       display: 'none'
 
-      '&-info':
-        width: per 100
+  #     '&-info':
+  #       width: per 100
 
-      '&-arrow':
-        display: 'inline-block'
-        height: px 18
-        width: px 18
-        borderWidth: joinS [
-          px 2
-          px 2
-          0
-          0
-        ]
-        borderColor: '#888'
-        borderStyle: 'solid'
-        transform: joinS [
-          matrix [
-            0.71, 0.71
-            -0.71, 0.71
-            0, 0
-          ]
-          translate per -50
-        ]
+  #     '&-arrow':
+  #       display: 'inline-block'
+  #       height: px 18
+  #       width: px 18
+  #       borderWidth: joinS [
+  #         px 2
+  #         px 2
+  #         0
+  #         0
+  #       ]
+  #       borderColor: '#888'
+  #       borderStyle: 'solid'
+  #       transform: joinS [
+  #         matrix [
+  #           0.71, 0.71
+  #           -0.71, 0.71
+  #           0, 0
+  #         ]
+  #         translate per -50
+  #       ]
 
-        position: 'absolute'
-        top: per 50
-        right: 0
+  #       position: 'absolute'
+  #       top: per 50
+  #       right: 0
