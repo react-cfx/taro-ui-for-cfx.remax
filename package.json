@@ -4,7 +4,9 @@
   "author": "FooTearth <footearth@gmail.com>",
   "scripts": {
     "dev": "remax build -t wechat -w",
-    "postinstall": "npx replace 'arrayEach\\(' 'arrayEach.default(' ./node_modules/fela/es/createRenderer.js",
+    "postinstall": "yarn arrayEach; yarn arrayReduce",
+    "arrayEach": "npx replace 'arrayEach\\(' 'arrayEach.default(' ./node_modules/fela/es/createRenderer.js",
+    "arrayReduce": "npx replace 'arrayReduce\\(' 'arrayReduce.default(' ./node_modules/fela/es/generateFontSource.js",
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
     "build": "NODE_ENV=production remax build -t wechat",

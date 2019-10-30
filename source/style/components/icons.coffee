@@ -26,7 +26,7 @@ iconClasses = (iconsObj) =>
         then "-#{postfix}"
         else ''
       }::before":
-        content: "'\"\\e#{iconsObj[c]}\"'"
+        content: "\"\\e#{iconsObj[c]}\""
     }
   , {}
 

@@ -1,4 +1,3 @@
-import dd from 'ddeyes'
 import Color from 'color'
 
 colorToRgba = (color, alpha) =>

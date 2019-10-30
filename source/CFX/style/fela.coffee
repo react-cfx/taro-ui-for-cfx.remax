@@ -2,13 +2,23 @@ import { createRenderer } from 'fela'
 import { renderToString } from 'fela-tools'
 
 newFela = (styles) =>
+
   renderer = createRenderer()
+
   globalHandler = (globalStyles) =>
     (
       Object.keys globalStyles
     )
     .forEach (i) =>
       renderer.renderStatic globalStyles[i], i
+
+  fontsHandler = (fontsStyles) =>
+    (
+      Object.keys fontsStyles
+    )
+    .forEach (i) =>
+      renderer.renderFont i, fontsStyles[i] 
+
   classes = =>
     (
       Object.keys styles
@@ -17,12 +27,18 @@ newFela = (styles) =>
       {
         r...
         (
-          if c is '@global'
-          then(
-            globalHandler styles[c]
-            {} 
-          )
-          else [c]: renderer.renderRule => styles[c]
+          switch c
+            when '@global'
+            then(
+              globalHandler styles[c]
+              {} 
+            )
+            when '@fonts'
+            then(
+              fontsHandler styles[c]
+              {}
+            )
+            else [c]: renderer.renderRule => styles[c]
         )...
       }
     , {}

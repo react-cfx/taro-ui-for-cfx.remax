@@ -1,13 +1,9 @@
-# import defStyl from './style/variables/default'
-# { color } = defStyl
-# import iconfont from './style/components/icon_font'
 import icons from './style/components/icons'
 
-export default {
+# import defStyl from './style/variables/default'
+# { color } = defStyl
 
-  # '@iconFont': {
-  #   iconfont
-  # }
+export default {
 
   '@global': {
 
