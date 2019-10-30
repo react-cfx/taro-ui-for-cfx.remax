@@ -1,10 +1,15 @@
 # import defStyl from './style/variables/default'
-
 # { color } = defStyl
+# import iconfont from './style/components/icon_font'
+import icons from './style/components/icons'
 
-export default
+export default {
 
-  '@global':
+  # '@iconFont': {
+  #   iconfont
+  # }
+
+  '@global': {
 
     page:
       backgroundColor: '#f8f8f8'
@@ -17,6 +22,8 @@ export default
 
     view:
       boxSizing: 'boxder-box'
+
+    icons...
 
   # 'at-frozen':
   #   position: 'fixed'
@@ -132,3 +139,6 @@ export default
 
   #       '&.no-padding':
   #         padding: 0
+
+  }
+}
