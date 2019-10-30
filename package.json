@@ -9,6 +9,8 @@
     "arrayReduce": "npx replace 'arrayReduce\\(' 'arrayReduce.default(' ./node_modules/fela/es/generateFontSource.js",
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
+    "cfxbuilder": "npx cfxbuilder",
+    "cfxrebuilder": "rimraf src; npm run cfxbuilder; npx cfxbuilder",
     "build": "NODE_ENV=production remax build -t wechat",
     "rebuild": "rimraf src; npx cfxbuilder; npm run clean; npm run dev"
   },

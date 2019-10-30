@@ -1,4 +1,3 @@
-import dd from 'ddeyes'
 import CoffeeScript from 'coffeescript'
 import { newFela } from './source/CFX/style/fela'
 import css from 'css'
