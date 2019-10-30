@@ -36,11 +36,10 @@ export default {
 
     display: 'inline-block'
 
-    font:
-      family: 'iconfont'
-      style: 'normal'
-      weight: 400
-      variant: 'normal'
+    fontFamily: 'iconfont'
+    fontStyle: 'normal'
+    fontWeight: 400
+    fontVariant: 'normal'
 
     textTransform: 'none'
     textRendering: 'auto'

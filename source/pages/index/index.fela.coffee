@@ -1,4 +1,3 @@
-import { iconfont } from '../../style/components/fonts'
 import {
   px
   per
@@ -9,10 +8,6 @@ import {
 } from '../../CFX/style/helper'
 
 export default
-
-  '@fonts': {
-    iconfont
-  }
 
   page:
     position: 'relative'
